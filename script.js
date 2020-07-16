@@ -1,0 +1,9 @@
+const userLogin = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+userLogin(3000)
+    .then(() => console.log('us getting you logged in!'));
+
+let loadSite = () => {
+    console.log('loading the site')
+};
+loadSite();
